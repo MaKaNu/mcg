@@ -19,11 +19,11 @@
 % ------------------------------------------------------------------------
 function db_root_dir = database_root_dir( database )
 if strcmp(database,'pascal2012')
-    db_root_dir = '/mnt/data1/datasets/image/voc/VOCdevkit/VOC2012';
+    db_root_dir = '/path/to/pascal2012';
 elseif strcmp(database,'bsds500')
     db_root_dir = '/path/to/BSDS500/';
 elseif strcmp(database, 'mars')
-    db_root_dir = '/mnt/data1/datasets/image/MARS/FirstHundred';
+    db_root_dir = '/path/to/mars';
 else
     error(['Unknown database: ' database]);
 end
