@@ -1,5 +1,5 @@
 function ground_truth = get_ground_truth( database, image_id )
-    if strcmp(database,'pascal2012')
+    if strcmp(database,'pascal2012') || strcmp(database, 'mars')
         ground_truth.object = imread(fullfile(database_root_dir(database), 'SegmentationObject', [image_id '.png']));
         ground_truth.class  = imread(fullfile(database_root_dir(database), 'SegmentationClass', [image_id '.png']));
     elseif strcmp(database,'bsds500')

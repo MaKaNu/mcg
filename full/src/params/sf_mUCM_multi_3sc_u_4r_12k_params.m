@@ -16,14 +16,18 @@
 function params = sf_mUCM_multi_3sc_u_4r_12k_params(  )
 
 % Pascal database
-params.database = 'pascal2012';
+%params.database = 'pascal2012';
+params.database = 'mars';
 
 % GT sets for training
-params.gt_set_pareto  = 'train2012';
-params.gt_set_ranking = 'train2012';
+%params.gt_set_pareto  = 'train2012';
+%params.gt_set_ranking = 'train2012';
+params.gt_set_pareto  = 'val';
+params.gt_set_ranking = 'val';
 
 % GT set for testing
-params.gt_set_test = 'val2012';
+%params.gt_set_test = 'val2012';
+params.gt_set_test = 'test';
 
 % String identifying the raw hierarchy files
 params.raw_hiers = 'sf_mUCM';
